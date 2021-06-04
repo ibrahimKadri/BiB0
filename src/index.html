@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سفرني</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body style="background-color: #abd1c6;">
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">
+        <img src="images/logo.png" width="20px" height="20px">
+    </a>
+    <a href="#about">عنا</a>
+    <a href="#service">خدماتنا</a>
+    <a href="#tours">جولاتنا</a>
+    <a href="#loc">موقعنا</a>
+    <a href="#contact">تواصل معنا</a>
+
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<style>
+.topnav {
+overflow: hidden;
+background-color: #004643;
+}
+
+.topnav a {
+float: right;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #f9bc60;
+color: white;
+}
+
+.topnav a.active {
+background-color: #f9bc60;
+}
+.topnav .icon {
+display: none;
+}
+
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+float: left;
+display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+position: absolute;
+left: 0;
+top: 0;
+}
+.topnav.responsive a {
+float: none;
+display: block;
+text-align: right;
+}
+}
+
+</style>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    x.className += " responsive";
+    } else {
+    x.className = "topnav";
+    }
+}
+</script>
+<!-------------------------ABOUT-------------------->
+<div class="about text-right" id="about">
+    <div class="container">
+        <h2>ما هي شركة سفرني؟ </h2>
+        <p>
+            الشركة السياحية الأفضل في الوطن العربي، هدفنا مساعدتك وتيسير أمورك، لا تتردد بالتواصل معنا فنحن هنا لنساعدك على إيجاد كل ما تحتاج له. إن كنت تبحث عن سكن أو جولة سياحية لتقضي أفضل الأوقات فقد وجدت طلبك.
+        </p>
+        <a href="login.html"><button>تسجيل الدخول</button></a>
+    </div>
+</div>
+<!--------------------SERVICES------------------------->
+<div class="service" id="service">
+    <h2 class="text-right heading">
+        خدماتنا
+    </h2>
+    <div class="container">
+            <div class="row">
+                <div class="item-l item col-md-5">
+                    <div class="content">
+                        <i class="fas fa-car fa-5x"></i>
+                        <div class="text text-right">
+                            <h2>
+                                حجز سيارة
+                            </h2>
+                            <p>
+                                نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة والقريبة من جميع الخدمات.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-r item col-md-5">
+                    <div class="content">
+                        <i class="fas fa-home fa-5x"></i>
+                        <div class="text text-right">
+                            <h2>
+                                حجز سكن
+                            </h2>
+                            <p>
+                                نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة والقريبة من جميع الخدمات.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-l item col-md-5">
+                    <div class="content">
+                        <i class="fas fa-plane-departure fa-5x"></i>
+                        <div class="text text-right">
+                            <h2>
+                                الاستقبال من المطار
+                            </h2>
+                            <p>
+                                نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا متواجد دائمًا في خدمتكم أثناء وصولكم أو ذهابكم للمطار مع أفضل وسائل النقل.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-r item col-md-5">
+                    <div class="content">
+                        <i class="fas fa-bus fa-5x"></i>
+                        <div class="text text-right">
+                            <h2>
+                                جولات سياحية
+                            </h2>
+                            <p>
+                                جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات مع أفضل المرشدين السياحيين الذين يُجيدون اللغة العربية ولإنجليزية.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<!----------------------TOURS----------------------->
+<div class="tours" id="tours">
+    <h2 class="text-right heading">
+        الجولات السياحية
+    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="item col-md-5 col-sm-12">
+                <img src="images/turkey1.jpg" height="300px"width="100%" >
+                <p class="upper">
+                    <ol>
+                        <li>
+                            جولة في إسطنبول، تركيا
+                        </li>
+                        <li>
+                            $بتكلفة 500
+                        </li>
+                    </ol>
+                </p>
+                <p class="lower text-right">
+                        إسطنبول هي واحدة من أكبر و أجمل مدن تركيا وهي مصنفة ضمن أكثر المدن السياحية جذباً للسياح في العالم وتُعتبر إسطنبول الخيار الأول للسياح الذين يفكرون في الذهاب إلى تركيا
+                        <br>
+                        <br>
+                        <a href="istanbul.html"><button> مسار الرحلة</button></a>
+                </p>
+            </div>
+            <div class="item col-md-5 col-sm-12">
+                <img src="images/egypt5.jpg" height="300px"width="100%" >
+                <p class="upper">
+                    <ol>
+                        <li>
+                            جولة في اهرامات مصر
+                        </li>
+                        <li>
+                            $بتكلفة 350
+                        </li>
+                    </ol>
+                </p>
+                <p class="lower text-right">
+                    تتصف أهرامات مصر الثلاثة بأنها أحد أهم عجائب الدنيا السبعة في جمهورية مصر تقع على هضبة الجيزة في محافظة الجيزة، أيضًا تقع على الضفة الغربية لنهر النيل وتعد من اكثر البلاد سياحة
+                     <br>
+                     <br>
+                     <a href="pyramids.html"><button> مسار الرحلة</button></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------LOCATION-------------------------->
+<div class="location" id="loc">
+    <h2 class="text-right heading">
+        عنوان الشركة
+    </h2>
+    <div class="container text-center ">
+            <div class="row">
+                <div class="item-l col-md-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52992.229393353075!2d35.53930196172893!3d33.88928459734011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17215880a78f%3A0x729182bae99836b4!2z2KjZitix2YjYqg!5e0!3m2!1sar!2slb!4v1620572677531!5m2!1sar!2slb" width="400" height="250" style="border:0; max-width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="item-r col-md-5 text-right">
+                    <ol>
+                        <li>
+                            بيروت، لبنان
+                            <i class="fas fa-map-marker"></i>
+                        </li>
+                        <li>
+                        دبي، الإمارات
+                        <i class="fas fa-map-marker"></i>
+                        </li>
+                        <li>
+                            الرياض، السعودية
+                            <i class="fas fa-map-marker"></i>
+                        </li>
+                        <li>
+                            القاهرة، مصر
+                            <i class="fas fa-map-marker"></i>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+    </div>
+    <form class="first_form">
+    <input type="text" placeholder="البريد" class="email">
+    <input type="text" placeholder="الإسم">
+    </form>
+    <form class="second_form">
+        <textarea cols=50 rows="5"></textarea>
+    </form>
+    <button class="send_msg">
+    إرسال
+    </button>
+</div>
+<!--------------------CONTACT US------------------------->
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="item-l col-md text-right">
+            <h3>
+                تابعنا عبر مواقع التواصل التالية
+            </h3>
+            <ol style="float: right;">
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fab fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+            </ol>
+            </div>
+            <div class="item-r col-md">
+            <h3 class="text-right">
+                تواصل معنا
+            </h3>
+            <ol class="text-right">
+                <li>
+                    بيروت، لبنان
+                    <i class="fas fa-map-marker"></i>
+                </li>
+                <li>
+                    123456676
+                    <i class="fas fa-phone"></i>
+                </li>
+                <li>
+                    email@domain.com
+                    <i class="fas fa-envelope"></i>
+                </li>
+            </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------RIGHTS -------------------------->
+<div class="copy text-center">
+    <p>    حقوق النشر محفوظة للمبرمج إبراهيم    </p>
+</div>
+<!--------------------------------------------->
+<!------BOOTSTRAP-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+<script src="index.js"></script>
+</body>
+</html>
