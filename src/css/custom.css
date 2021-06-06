@@ -1,0 +1,207 @@
+body {
+  background-color: #abd1c6;
+}
+
+button {
+  background-color: #f9bc60;
+  border: 1px solid #f9bc60;
+  color: #001e1d;
+}
+
+h2 {
+  color: #fffffe;
+}
+
+p {
+  color: #abd1c6;
+}
+
+i {
+  color: #e8e4e6;
+}
+
+.topnav {
+  background-color: #004643;
+}
+
+.topnav a:hover,
+.topnav a:active {
+  background-color: #f9bc66;
+}
+
+.about {
+  background-color: #004643;
+}
+
+.service .item {
+  border: 1px solid #004643;
+  background-color: #004643;
+}
+
+.tours .item {
+  background-color: #004643;
+}
+
+.tours li {
+  color: #e16162;
+}
+
+.location {
+  background-color: #004643;
+}
+
+.location li {
+  color: #f9bc66;
+}
+
+.location input,
+.location textarea {
+  background-color: #abd1c6;
+}
+
+.contact i,
+.contact li {
+  color: #02524f;
+}
+
+.copy {
+  background-color: #004643;
+  color: white;
+}
+
+/**************************************************I S T A N B U L********************/
+.istanbuul .topnav {
+  background-color: #010101;
+}
+
+.istanbuul .topnav a {
+  color: #f2f2f2;
+}
+
+.istanbuul .topnav a:hover,
+.istanbuul .topnav a:active {
+  background-color: #7f5af0;
+  color: white;
+}
+
+.istanbuul h1 {
+  color: #fffffe;
+}
+
+.istanbuul p {
+  color: #94a1b2;
+}
+
+.istanbuul button {
+  background-color: #7f5af0;
+  border: 1px solid #7f5af0;
+  color: #fffffe;
+}
+
+.istanbuul .prev,
+.istanbuul .next {
+  background-color: #7f5af0;
+  color: white;
+}
+
+.istanbuul .prev:hover,
+.istanbuul, .next:hover {
+  background-color: #2cb67d;
+  color: white;
+}
+
+.istanbuul .dot {
+  background-color: #7f5af0;
+}
+
+.istanbuul .active, .istanbuul .dot:hover {
+  background-color: #2cb67d;
+}
+
+.istanbuul .contact li {
+  color: #7f5af0;
+}
+
+.istanbuul .contact i {
+  color: #2cb67d;
+}
+
+.istanbuul h3 {
+  color: white;
+}
+
+.istanbuul .copy {
+  background-color: #010101;
+  color: white;
+}
+
+.istanbuul span.colored_list {
+  color: #7f5af0;
+}
+
+/*********************************************************P Y R A M I D Z ************/
+.pyramidz h1,
+.pyramidz h3 {
+  color: #fffffe;
+}
+
+.pyramidz p {
+  color: #a7a9be;
+}
+
+.pyramidz .prev, .pyramidz .next {
+  color: #fffffe;
+  background-color: #ff8906;
+}
+
+.pyramidz .prev:hover, .pyramidz .next:hover {
+  background-color: #e53170;
+  color: white;
+}
+
+.pyramidz .dot {
+  background-color: #ff8906;
+}
+
+.pyramidz .active, .pyramidz .dot:hover {
+  background-color: #e53170;
+}
+
+.pyramidz .contact li {
+  color: #ff8906;
+}
+
+.pyramidz .contact i {
+  color: #e53170;
+}
+
+.pyramidz .copy {
+  background-color: #e53170;
+  color: white;
+}
+
+.pyramidz .topnav {
+  background-color: #ff8906;
+}
+
+.pyramidz .topnav a:hover {
+  background-color: #e53170;
+  color: white;
+}
+
+/*******************************************S I G N I N****************/
+body.signi {
+  background-image: linear-gradient(to bottom right, #03A9f4, #e91e63);
+}
+
+.signi #a,
+.signi #b {
+  color: rebeccapurple;
+}
+
+.signi h2,
+.signi .agreement {
+  color: white;
+}
+
+/*# sourceMappingURL=custom.css.map */

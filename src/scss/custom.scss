@@ -1,0 +1,203 @@
+$light-blue:#abd1c6;
+$topnav:#004643;
+$btn-a-act-hov-locli:#f9bc60;
+$a-li:#f9bc66;
+$btn-contact-text:#001e1d;
+$heading:#fffffe;
+$icon:#e8e4e6;
+$div:#004643;
+$li-tours:#e16162;
+$li-i:#02524f;
+
+@mixin button_properties {
+    background-color: $btn-a-act-hov-locli;
+    border: 1px solid $btn-a-act-hov-locli;
+    color: $btn-contact-text;  
+}
+body{
+    background-color: $light-blue;
+}
+button{
+@include button_properties;
+}
+h2{
+    color:$heading ;
+}
+p{
+color: $light-blue;
+}
+i{
+color: $icon;
+}
+.topnav{
+    background-color: $topnav;
+}
+
+.topnav{
+    a:hover,
+    a:active{
+        background-color: $a-li;
+    }
+
+}
+.about{
+    background-color: $div;
+}
+.service .item{
+    border: 1px solid $div;
+    background-color: $div;
+}
+.tours .item{
+    background-color: $div;
+}
+.tours li{
+    color: $li-tours;
+}
+.location{
+    background-color: $div;
+}
+.location li{
+    color: $a-li;
+}
+
+.location{
+    input,
+    textarea{
+        background-color: $light-blue;
+    }
+}
+
+.contact {
+    i,
+    li{
+        color:$li-i;  
+    }
+}
+.copy{
+    background-color: $div;
+    color: white;
+}
+/**************************************************I S T A N B U L********************/
+$ist-nav-copy:#010101;
+$ist-a:#f2f2f2;
+$ist-btn-a-hov-act-bg:#7f5af0;
+$ist-heading:#fffffe;
+$ist-p:#94a1b2;
+$ist-slide-hov:#2cb67d;
+$ist-white:#fffffe;
+
+@mixin ist-btn-prop {
+    background-color:$ist-btn-a-hov-act-bg;
+    border: 1px solid $ist-btn-a-hov-act-bg;
+    color: $ist-white;
+}
+.istanbuul .topnav{
+    background-color: $ist-nav-copy;
+}
+.istanbuul .topnav a{
+    color: $ist-a;
+}
+.istanbuul .topnav a:hover,
+.istanbuul .topnav a:active{
+    background-color: $ist-btn-a-hov-act-bg;
+    color: white;
+}
+.istanbuul h1{
+    color: $ist-heading;
+}
+.istanbuul p{
+    color: $ist-p;
+}
+.istanbuul button{
+@include ist-btn-prop;
+}
+.istanbuul .prev, 
+.istanbuul .next{
+    background-color: $ist-btn-a-hov-act-bg;
+    color: white;
+}
+.istanbuul .prev:hover,
+.istanbuul ,.next:hover{
+background-color: $ist-slide-hov;
+color: white;
+}
+.istanbuul .dot{
+    background-color: $ist-btn-a-hov-act-bg;
+}
+.istanbuul .active, .istanbuul .dot:hover{
+    background-color: $ist-slide-hov;
+}
+.istanbuul .contact li{
+    color: $ist-btn-a-hov-act-bg;
+}
+.istanbuul .contact i{
+    color: $ist-slide-hov;
+}
+.istanbuul h3{
+    color: white;
+}
+.istanbuul .copy{
+    background-color: $ist-nav-copy;
+    color: white;
+}
+.istanbuul span.colored_list{
+    color: $ist-btn-a-hov-act-bg;
+}
+/*********************************************************P Y R A M I D Z ************/
+$py-head:#fffffe;
+$py-p:#a7a9be;
+$py-btn-li-bg:#ff8906;
+$py-btn-dot-i-bg-hov:#e53170;
+.pyramidz h1,
+.pyramidz h3{
+    color: $py-head;
+}
+.pyramidz p{
+    color: $py-p;
+}
+.pyramidz .prev, .pyramidz .next{
+    color: $py-head;
+    background-color:$py-btn-li-bg;
+}
+.pyramidz .prev:hover, .pyramidz .next:hover{
+    background-color: $py-btn-dot-i-bg-hov;
+    color: white;
+}
+.pyramidz .dot{
+    background-color: $py-btn-li-bg;
+}
+.pyramidz .active, .pyramidz .dot:hover{
+    background-color:$py-btn-dot-i-bg-hov;
+}
+.pyramidz .contact li{
+    color: $py-btn-li-bg;
+}
+.pyramidz .contact i{
+    color: $py-btn-dot-i-bg-hov;
+}
+.pyramidz .copy{
+    background-color: $py-btn-dot-i-bg-hov;
+    color: white;
+}
+.pyramidz .topnav{
+    background-color: $py-btn-li-bg;
+}
+.pyramidz .topnav a:hover {
+    background-color: $py-btn-dot-i-bg-hov;
+    color: white;
+}
+/*******************************************S I G N I N****************/
+$s-bg1:#03A9f4;
+$s-bg2:#e91e63;
+$s-text:rebeccapurple;
+body.signi{
+    background-image: linear-gradient(to bottom right,$s-bg1,$s-bg2);
+}
+.signi #a,
+.signi #b{
+    color: $s-text;
+}
+.signi h2,
+.signi .agreement{
+    color: white;
+}

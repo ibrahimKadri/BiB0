@@ -4,20 +4,9 @@ body{
     font-size: 30px;
 }
 button{
-    background: #f9bc60;
-    color: #001e1d;
-    border:1px solid #f9bc60 ;
     outline: none;
 }
-h2{
-    color: #fffffe;
-}
-p{
-    color: #abd1c6;
-}
-i{
-    color: #e8e4e6;
-}
+
 /****************/
 /**ABOUT***/
 .about{
@@ -25,11 +14,8 @@ i{
     margin-bottom: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #004643;
 }
-.about .container{
-    
-}
+
 .about p{
     font-size: 20px;
 }
@@ -54,29 +40,30 @@ text-decoration: none;
 justify-content: center;
 }
 .service .item{
-    border: 1px solid #004643;
     margin-right: 10px;
     margin-top: 10px;
     padding: 20px 0 20px 0;
-background-color: #004643;
 }
 .service .item .content{
     display: flex;
 }
+@media  only screen and (max-width:634px) {
+    .service .item{
+        margin-left: 10px;
+    }   
+}
+
 /*******************TOURS***************************/
 
-.tours{
-}
 .tours h2.heading{
     margin-right: 20px;
 }
-.tours .column{
-}
+
 .tours .item{
     width: 500px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #004643;
+    margin-top: 20px;
 }
 .tours .item ol{
     text-align: right;
@@ -84,14 +71,12 @@ background-color: #004643;
 .tours li{
     list-style: none;
     margin-right: 10px;
-    color: #e16162;
 }
 /*******************SERVICE***************************/
 
 .location{
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #004643;
     padding-bottom: 10px;
 }
 .location .heading{
@@ -106,14 +91,12 @@ list-style: none;
 .location .container .item-r li{
     list-style: none;
 }
-.location li{
-    color: #f9bc60;
-}
+
 .location .first_form{
     display: grid;
     justify-content: center;
-    grid-template-columns: auto auto;
-    column-gap: 20px;
+    grid-template-columns: 250px 250px ;
+    column-gap: 10px;
 }
 .location .second_form{
     display: flex;
@@ -138,15 +121,15 @@ list-style: none;
     margin-top: 10px;
     direction: rtl;
     outline: none;
-    background-color: #abd1c6;
 }
 .location textarea{
     outline: none;
     direction: rtl;
-    background-color: #abd1c6;
+    margin-right: 5px;
+    margin-left: 5px;
 
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 524px) {
     .location .first_form{
         display: flex;
         flex-direction: column-reverse;
@@ -168,16 +151,11 @@ list-style: none;
 .contact li{
     list-style: none;
     margin-right: 10px;
-    color: #001e1d;
 }
-.contact i{
-    color: #001e1d;
-}
+
 /*******************SERVICE***************************/
 
 .copy{
-    background-color: #004643;
-    color: white;
     padding: 8px;
 }
 /******************************************************************************************************************************************************************************************************************************************************************************************/
@@ -186,13 +164,11 @@ list-style: none;
     }
     .istanbuul .topnav {
       overflow: hidden;
-      background-color: #010101;
       }
       
       .istanbuul   .topnav a {
       float: right;
       display: block;
-      color: #f2f2f2;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -200,31 +176,20 @@ list-style: none;
       }
       
       .istanbuul   .topnav a:hover {
-      background-color: #7f5af0;
-      color: wheat;
       text-decoration: none;
       }
       
-      .istanbuul  .topnav a.active {
-      background-color: #7f5af0;
-      color: white;
-      }
       .istanbuul h1{
-  color: #fffffe;
   margin-right: 20px;
   margin-left: 20px;
   
   }
   
   .istanbuul p{
-  color: #94a1b2;
   margin:20px 20px 0 20px;
   }
   .istanbuul button{
-  background-color: #7f5af0;
-  color: #fffffe;
   outline: none;
-  border: 1px solid #7f5af0 ;
   padding: 10px;
   margin-left: 20px;
   }
@@ -241,15 +206,13 @@ list-style: none;
   }
   
   /* Next & previous buttons */
-  .istanbuul .prev, .next {
+  .istanbuul .prev, .istanbuul .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  background-color: #7f5af0;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -266,8 +229,6 @@ list-style: none;
   /* On hover, add a black background color with a little bit see-through */
   .istanbuul .prev:hover, .istanbuul .next:hover {
   text-decoration: none;
-  color: white;
-  background-color: #2cb67d;
   }
   
   
@@ -277,14 +238,9 @@ list-style: none;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #7f5af0;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  }
-  
-  .istanbuul .active, .istanbuul .dot:hover {
-  background-color: #2cb67d;
   }
   
   /* On smaller screens, decrease text size */
@@ -298,41 +254,25 @@ list-style: none;
   .istanbuul .contact li{
       list-style: none;
       margin-right: 10px;
-      color: #7f5af0;
   }
-  .istanbuul .contact i{
-      color: #2cb67d;
-  }
-  .istanbuul h3{
-      color: white;
-  }
+
   /*******************SERVICE***************************/
   
   .istanbuul .copy{
-      background-color: #010101;
       padding: 8px;
   }
-  .istanbuul .copy p{
-      color: white;
-  }
-  .istanbuul span.colored_list{
-      color: #7f5af0;
-  }
+
  /******************************************************************************************************************************************************************************************************************************************************************************************/ 
  
 /******************************************************************************************************************************************************************************************************************************************************************************************/
 .pyramidz h1{
-    color: #fffffe;
     margin-right: 20px;
     margin-top: 20px;
     }
-    .pyramidz h3{
-    color: #fffffe;
-    }
+
     .pyramidz p{
     font-size: 28px;
     line-height: 40px;
-    color: #a7a9be;
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
@@ -361,7 +301,6 @@ list-style: none;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: #ff8906;
     }
     
     /* Position the "next button" to the right */
@@ -370,10 +309,7 @@ list-style: none;
     border-radius: 3px 0 0 3px;
     }
     
-    .pyramidz .next:hover, .pyramidz .prev:hover{
-    background-color: #e53170;
-    color: white;
-    }
+
     
     /* The dots/bullets/indicators */
     .pyramidz .dot {
@@ -381,15 +317,12 @@ list-style: none;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #ff8906;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
     }
     
-    .pyramidz .active, .pyramidz .dot:hover {
-    background-color: #e53170;
-    }
+
     .pyramidz a.prev:hover, .pyramidz a.next:hover{
     text-decoration: none;
     }
@@ -407,23 +340,16 @@ list-style: none;
     .pyramidz .contact li{
     list-style: none;
     margin-right: 10px;
-    color: #ff8906;
     }
-    .pyramidz .contact i{
-    color: #e53170;
-    }
+
     /*******************SERVICE***************************/
     
     .pyramidz .copy{
-    background-color: #e53170;
         padding: 8px;
     }
-    .pyramidz .copy p{
-    color: white;
-    }
+
     .pyramidz .topnav {
     overflow: hidden;
-    background-color: #ff8906;
     }
     
     .pyramidz .topnav a {
@@ -437,152 +363,30 @@ list-style: none;
     }
     
     .pyramidz .topnav a:hover {
-    background-color: #e53170;
     color: white;
     text-decoration: none;
     }
-/************************************************************************************************************************************************************************************************************************************************************************************/
-.pyramidz h1{
-    color: #fffffe;
-    margin-right: 20px;
-    margin-top: 20px;
-    }
-    .pyramidz h3{
-    color: #fffffe;
-    }
-    .pyramidz p{
-    font-size: 28px;
-    line-height: 40px;
-    color: #a7a9be;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    }
-    
-    /* Slideshow container */
-    .pyramidz .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    width: 500px;
-    height: 400px;
-    }
-    
-    /* Next & previous buttons */
-    .pyramidz .prev, .pyramidz .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color:#fffffe;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: #ff8906;
-    }
-    
-    /* Position the "next button" to the right */
-    .pyramidz .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    }
-    
-    .pyramidz .next:hover, .pyramidz .prev:hover{
-    background-color: #e53170;
-    color: white;
-    }
-    
-    /* The dots/bullets/indicators */
-    .pyramidz .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #ff8906;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    }
-    
-    .pyramidz .active, .pyramidz .dot:hover {
-    background-color: #e53170;
-    }
-    .pyramidz a.prev:hover, .pyramidz a.next:hover{
-    text-decoration: none;
-    }
-    
-    
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-    .pyramidz .prev, .pyramidz .next,.pyramidz .text {font-size: 11px}
-    }
-    
-    
-    .pyramidz .contact .item-l ol{
-    display: flex;
-    }
-    .pyramidz .contact li{
-    list-style: none;
-    margin-right: 10px;
-    color: #ff8906;
-    }
-    .pyramidz .contact i{
-    color: #e53170;
-    }
-    /*******************SERVICE***************************/
-    
-    .pyramidz .copy{
-    background-color: #e53170;
-        padding: 8px;
-    }
-    .pyramidz .copy p{
-    color: white;
-    }
-    .pyramidz .topnav {
-    overflow: hidden;
-    background-color: #ff8906;
-    }
-    
-    .pyramidz .topnav a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    }
-    
-    .pyramidz .topnav a:hover {
-    background-color: #e53170;
-    color: white;
-    text-decoration: none;
-    }
+
 /****************************************************************************************************************************************************************************************************************************************************************************************/  
 body.signi{
     height: 100%;
         margin: 0;
      background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: linear-gradient(to bottom right,#03A9F4,#E91e63);
 }
 .signi #a, 
 .signi #b{
-    padding: 10px;text-align: center; color:rebeccapurple;
-    font-size: 20px;border-radius: 20px;outline: none;
+    padding: 10px;text-align: center; 
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
 }
 .signi h2{
-    text-align: center; 
-    color: white;
+    text-align: center;
     margin-top: 18%;
 }
 .signi .agreement{
     text-align: center;
-    color: white;
 }
  .signi tr td button{
     padding: 8px; width: 268px; font-size: 20px;border-radius: 20px
@@ -593,3 +397,209 @@ body.signi{
     text-decoration: none;
  }
  /**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/  
+body {
+  background-color: #abd1c6;
+}
+
+button {
+  background-color: #f9bc60;
+  border: 1px solid #f9bc60;
+  color: #001e1d;
+}
+
+h2 {
+  color: #fffffe;
+}
+
+p {
+  color: #abd1c6;
+}
+
+i {
+  color: #e8e4e6;
+}
+
+.topnav {
+  background-color: #004643;
+}
+
+.topnav a:hover,
+.topnav a:active {
+  background-color: #f9bc66;
+}
+
+.about {
+  background-color: #004643;
+}
+
+.service .item {
+  border: 1px solid #004643;
+  background-color: #004643;
+}
+
+.tours .item {
+  background-color: #004643;
+}
+
+.tours li {
+  color: #e16162;
+}
+
+.location {
+  background-color: #004643;
+}
+
+.location li {
+  color: #f9bc66;
+}
+
+.location input,
+.location textarea {
+  background-color: #abd1c6;
+}
+
+.contact i,
+.contact li {
+  color: #02524f;
+}
+
+.copy {
+  background-color: #004643;
+  color: white;
+}
+
+/**************************************************I S T A N B U L********************/
+.istanbuul .topnav {
+  background-color: #010101;
+}
+
+.istanbuul .topnav a {
+  color: #f2f2f2;
+}
+
+.istanbuul .topnav a:hover,
+.istanbuul .topnav a:active {
+  background-color: #7f5af0;
+  color: white;
+}
+
+.istanbuul h1 {
+  color: #fffffe;
+}
+
+.istanbuul p {
+  color: #94a1b2;
+}
+
+.istanbuul button {
+  background-color: #7f5af0;
+  border: 1px solid #7f5af0;
+  color: #fffffe;
+}
+
+.istanbuul .prev,
+.istanbuul .next {
+  background-color: #7f5af0;
+  color: white;
+}
+
+.istanbuul .prev:hover,
+.istanbuul, .next:hover {
+  background-color: #2cb67d;
+  color: white;
+}
+
+.istanbuul .dot {
+  background-color: #7f5af0;
+}
+
+.istanbuul .active, .istanbuul .dot:hover {
+  background-color: #2cb67d;
+}
+
+.istanbuul .contact li {
+  color: #7f5af0;
+}
+
+.istanbuul .contact i {
+  color: #2cb67d;
+}
+
+.istanbuul h3 {
+  color: white;
+}
+
+.istanbuul .copy {
+  background-color: #010101;
+  color: white;
+}
+
+.istanbuul span.colored_list {
+  color: #7f5af0;
+}
+
+/*********************************************************P Y R A M I D Z ************/
+.pyramidz h1,
+.pyramidz h3 {
+  color: #fffffe;
+}
+
+.pyramidz p {
+  color: #a7a9be;
+}
+
+.pyramidz .prev, .pyramidz .next {
+  color: #fffffe;
+  background-color: #ff8906;
+}
+
+.pyramidz .prev:hover, .pyramidz .next:hover {
+  background-color: #e53170;
+  color: white;
+}
+
+.pyramidz .dot {
+  background-color: #ff8906;
+}
+
+.pyramidz .active, .pyramidz .dot:hover {
+  background-color: #e53170;
+}
+
+.pyramidz .contact li {
+  color: #ff8906;
+}
+
+.pyramidz .contact i {
+  color: #e53170;
+}
+
+.pyramidz .copy {
+  background-color: #e53170;
+  color: white;
+}
+
+.pyramidz .topnav {
+  background-color: #ff8906;
+}
+
+.pyramidz .topnav a:hover {
+  background-color: #e53170;
+  color: white;
+}
+
+/*******************************************S I G N I N****************/
+body.signi {
+  background-image: linear-gradient(to bottom right, #03A9f4, #e91e63);
+}
+
+.signi #a,
+.signi #b {
+  color: rebeccapurple;
+}
+
+.signi h2,
+.signi .agreement {
+  color: white;
+}
+

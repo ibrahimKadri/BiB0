@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="css/custom.css">
 </head>
-<body style="background-color: #abd1c6;">
+<body>
 <div class="topnav" id="myTopnav">
     <a href="index.html" class="active">
         <img src="images/logo.png" width="20px" height="20px">
@@ -29,7 +29,7 @@
 <style>
 .topnav {
 overflow: hidden;
-background-color: #004643;
+/*background-color: #004643;*/
 }
 
 .topnav a {
@@ -43,12 +43,12 @@ font-size: 17px;
 }
 
 .topnav a:hover {
-background-color: #f9bc60;
+/*background-color: #f9bc60;*/
 color: white;
 }
 
 .topnav a.active {
-background-color: #f9bc60;
+/*background-color: #f9bc60;*/
 }
 .topnav .icon {
 display: none;
@@ -106,9 +106,9 @@ function myFunction() {
             <div class="row">
                 <div class="item-l item col-md-5">
                     <div class="content">
-                        <i class="fas fa-car fa-5x"></i>
                         <div class="text text-right">
                             <h2>
+                                <i class="fas fa-car fa-3x" style=" float: left;"></i>
                                 حجز سيارة
                             </h2>
                             <p>
@@ -119,9 +119,9 @@ function myFunction() {
                 </div>
                 <div class="item-r item col-md-5">
                     <div class="content">
-                        <i class="fas fa-home fa-5x"></i>
                         <div class="text text-right">
                             <h2>
+                            <i class="fas fa-home fa-3x" style=" float: left;"></i>
                                 حجز سكن
                             </h2>
                             <p>
@@ -132,9 +132,9 @@ function myFunction() {
                 </div>
                 <div class="item-l item col-md-5">
                     <div class="content">
-                        <i class="fas fa-plane-departure fa-5x"></i>
                         <div class="text text-right">
                             <h2>
+                                <i class="fas fa-plane-departure fa-3x" style=" float: left;"></i>
                                 الاستقبال من المطار
                             </h2>
                             <p>
@@ -145,9 +145,9 @@ function myFunction() {
                 </div>
                 <div class="item-r item col-md-5">
                     <div class="content">
-                        <i class="fas fa-bus fa-5x"></i>
                         <div class="text text-right">
                             <h2>
+                                <i class="fas fa-bus fa-3x " style=" float: left;"></i>
                                 جولات سياحية
                             </h2>
                             <p>
@@ -244,7 +244,7 @@ function myFunction() {
     <input type="text" placeholder="الإسم">
     </form>
     <form class="second_form">
-        <textarea cols=50 rows="5"></textarea>
+        <textarea cols=50 rows="5" placeholder="النص"></textarea>
     </form>
     <button class="send_msg">
     إرسال

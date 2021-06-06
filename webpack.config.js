@@ -14,7 +14,7 @@ module.exports = {
       
       devServer: {
         contentBase: path.join(__dirname,"/dist"),
-        port:1240,
+        port:1244,
         writeToDisk:true,
       },
     
@@ -57,6 +57,10 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "css/login.css"
         }),
+        new MiniCssExtractPlugin({
+          filename: "css/custom.css"
+      }),
+      
         new MiniCssExtractPlugin({
           filename: "css/pyramids.css"
       }),
