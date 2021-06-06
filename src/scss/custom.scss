@@ -1,27 +1,14 @@
-$light-blue:#abd1c6;
-$topnav:#004643;
-$btn-a-act-hov-locli:#f9bc60;
-$a-li:#f9bc66;
-$btn-contact-text:#001e1d;
-$heading:#fffffe;
-$icon:#e8e4e6;
-$div:#004643;
-$li-tours:#e16162;
-$li-i:#02524f;
+@import './_mixins';
+@import './variables';
 
-@mixin button_properties {
-    background-color: $btn-a-act-hov-locli;
-    border: 1px solid $btn-a-act-hov-locli;
-    color: $btn-contact-text;  
-}
 body{
     background-color: $light-blue;
 }
 button{
-@include button_properties;
+@include button_properties($btn-a-act-hov-locli,$btn-a-act-hov-locli,$btn-contact-text);
 }
 h2{
-    color:$heading ;
+    color:$heading;
 }
 p{
 color: $light-blue;
@@ -78,18 +65,9 @@ color: $icon;
     color: white;
 }
 /**************************************************I S T A N B U L********************/
-$ist-nav-copy:#010101;
-$ist-a:#f2f2f2;
-$ist-btn-a-hov-act-bg:#7f5af0;
-$ist-heading:#fffffe;
-$ist-p:#94a1b2;
-$ist-slide-hov:#2cb67d;
-$ist-white:#fffffe;
 
-@mixin ist-btn-prop {
-    background-color:$ist-btn-a-hov-act-bg;
-    border: 1px solid $ist-btn-a-hov-act-bg;
-    color: $ist-white;
+.istanbuul button{
+    @include ist-btn-prop($ist-btn-a-hov-act-bg,$ist-btn-a-hov-act-bg,$ist-white);
 }
 .istanbuul .topnav{
     background-color: $ist-nav-copy;
@@ -108,9 +86,7 @@ $ist-white:#fffffe;
 .istanbuul p{
     color: $ist-p;
 }
-.istanbuul button{
-@include ist-btn-prop;
-}
+
 .istanbuul .prev, 
 .istanbuul .next{
     background-color: $ist-btn-a-hov-act-bg;
@@ -144,10 +120,7 @@ color: white;
     color: $ist-btn-a-hov-act-bg;
 }
 /*********************************************************P Y R A M I D Z ************/
-$py-head:#fffffe;
-$py-p:#a7a9be;
-$py-btn-li-bg:#ff8906;
-$py-btn-dot-i-bg-hov:#e53170;
+
 .pyramidz h1,
 .pyramidz h3{
     color: $py-head;
@@ -187,9 +160,6 @@ $py-btn-dot-i-bg-hov:#e53170;
     color: white;
 }
 /*******************************************S I G N I N****************/
-$s-bg1:#03A9f4;
-$s-bg2:#e91e63;
-$s-text:rebeccapurple;
 body.signi{
     background-image: linear-gradient(to bottom right,$s-bg1,$s-bg2);
 }
