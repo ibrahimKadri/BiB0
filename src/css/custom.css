@@ -1,4 +1,3 @@
-/*******ISTANBUL***********/
 /****************
         INDEX
 *****************/
@@ -83,6 +82,10 @@ i {
 }
 
 /**************************************************I S T A N B U L********************/
+#ist-body {
+  background-color: #16161a;
+}
+
 .istanbuul button {
   background-color: #7f5af0;
   border: 1px solid #7f5af0;
@@ -153,6 +156,10 @@ i {
 }
 
 /*********************************************************P Y R A M I D Z ************/
+.pyramidz {
+  background-color: #0f0e17;
+}
+
 .pyramidz h1,
 .pyramidz h3 {
   color: #fffffe;

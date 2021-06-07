@@ -1,11 +1,13 @@
 @import './_mixins';
-@import './variables';
+@import './_variables';
 
 body{
-    background-color: $light-blue;
+    @include bg($light-blue);
 }
 button{
-@include button_properties($btn-a-act-hov-locli,$btn-a-act-hov-locli,$btn-contact-text);
+background-color: $btn-a-act-hov-locli;
+border: 1px solid $btn-a-act-hov-locli;
+color: $btn-contact-text; 
 }
 h2{
     color:$heading;
@@ -34,12 +36,15 @@ color: $icon;
     border: 1px solid $div;
     background-color: $div;
 }
-.tours .item{
-    background-color: $div;
+.tours{
+    .item{
+        background-color: $div;
+    }
+    li{
+        color: $li-tours;
+    }
 }
-.tours li{
-    color: $li-tours;
-}
+
 .location{
     background-color: $div;
 }
@@ -65,13 +70,20 @@ color: $icon;
     color: white;
 }
 /**************************************************I S T A N B U L********************/
+#ist-body{
+@include bg($ist-bg);
+}
+.istanbuul{
+    button{
+        background-color: $ist-btn-a-hov-act-bg;
+        border: 1px solid $ist-btn-a-hov-act-bg;
+        color: $ist-white;
+    }
+    .topnav{
+        background-color: $ist-nav-copy;
+    }
+}
 
-.istanbuul button{
-    @include ist-btn-prop($ist-btn-a-hov-act-bg,$ist-btn-a-hov-act-bg,$ist-white);
-}
-.istanbuul .topnav{
-    background-color: $ist-nav-copy;
-}
 .istanbuul .topnav a{
     color: $ist-a;
 }
@@ -80,11 +92,14 @@ color: $icon;
     background-color: $ist-btn-a-hov-act-bg;
     color: white;
 }
-.istanbuul h1{
-    color: $ist-heading;
-}
-.istanbuul p{
-    color: $ist-p;
+
+.istanbuul {
+    h1{
+        color: $ist-heading;
+    }
+    p{
+        color: $ist-p;
+    }
 }
 
 .istanbuul .prev, 
@@ -103,35 +118,49 @@ color: white;
 .istanbuul .active, .istanbuul .dot:hover{
     background-color: $ist-slide-hov;
 }
-.istanbuul .contact li{
-    color: $ist-btn-a-hov-act-bg;
+.istanbuul{
+    .contact{
+        li{
+            color: $ist-btn-a-hov-act-bg;
+        }
+        i{
+            color: $ist-slide-hov;
+        }
+    }
 }
-.istanbuul .contact i{
-    color: $ist-slide-hov;
+.istanbuul{
+    h3{
+        color: white;
+    }
+    .copy{
+        background-color: $ist-nav-copy;
+        color: white;
+    }
 }
-.istanbuul h3{
-    color: white;
-}
-.istanbuul .copy{
-    background-color: $ist-nav-copy;
-    color: white;
-}
+
 .istanbuul span.colored_list{
     color: $ist-btn-a-hov-act-bg;
 }
 /*********************************************************P Y R A M I D Z ************/
-
-.pyramidz h1,
-.pyramidz h3{
-    color: $py-head;
+.pyramidz{
+    @include bg($py-bg);
 }
+.pyramidz{
+    h1,h3{
+        color: $py-head;
+    }
+}
+
 .pyramidz p{
     color: $py-p;
 }
-.pyramidz .prev, .pyramidz .next{
-    color: $py-head;
-    background-color:$py-btn-li-bg;
+.pyramidz{
+    .prev,.next{
+        color: $py-head;
+        background-color:$py-btn-li-bg;
+    }
 }
+
 .pyramidz .prev:hover, .pyramidz .next:hover{
     background-color: $py-btn-dot-i-bg-hov;
     color: white;
@@ -142,19 +171,25 @@ color: white;
 .pyramidz .active, .pyramidz .dot:hover{
     background-color:$py-btn-dot-i-bg-hov;
 }
-.pyramidz .contact li{
-    color: $py-btn-li-bg;
+
+.pyramidz{
+    .contact{
+        li{
+            color: $py-btn-li-bg;
+        }
+        i{
+            color: $py-btn-dot-i-bg-hov;
+        }
+    }
+    .copy{
+        background-color: $py-btn-dot-i-bg-hov;
+        color: white;
+    }
+    .topnav{
+        background-color: $py-btn-li-bg;
+    }
 }
-.pyramidz .contact i{
-    color: $py-btn-dot-i-bg-hov;
-}
-.pyramidz .copy{
-    background-color: $py-btn-dot-i-bg-hov;
-    color: white;
-}
-.pyramidz .topnav{
-    background-color: $py-btn-li-bg;
-}
+
 .pyramidz .topnav a:hover {
     background-color: $py-btn-dot-i-bg-hov;
     color: white;
@@ -163,9 +198,11 @@ color: white;
 body.signi{
     background-image: linear-gradient(to bottom right,$s-bg1,$s-bg2);
 }
-.signi #a,
-.signi #b{
-    color: $s-text;
+
+.signi{
+    #a,#b{
+        color: $s-text;
+    }
 }
 .signi h2,
 .signi .agreement{

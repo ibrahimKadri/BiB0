@@ -1,11 +1,4 @@
-@mixin button-properties($bgc,$borderc,$textc) {
-    background-color: $bgc;
-    border: 1px solid $borderc;
-    color: $textc; 
+@mixin bg($color){
+    background-color: $color;
 }
-/*******ISTANBUL***********/
-@mixin ist-btn-prop($istbgc,$istborderc,$isttextc) {
-    background-color: $istbgc;
-    border: 1px solid $istborderc;
-    color:$isttextc ;
-}
+
